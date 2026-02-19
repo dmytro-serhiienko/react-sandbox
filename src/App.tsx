@@ -1,5 +1,5 @@
 import "./App.css";
-import Show from "./components/practice-reactivity";
+import Show from "./components/reactivity/practice-reactivity";
 
 function App() {
   return (

@@ -1,5 +1,7 @@
 // import css from "./practice-reactivity.css";
 
+// import { ImRss } from "react-icons/im";
+
 // // 1. Імпортуємо функцію useState
 // import { useState } from "react";
 
@@ -265,7 +267,7 @@
 //   );
 // }
 
-// 2️⃣ Лічильник кліків кнопки
+//! 2️⃣ Лічильник кліків кнопки
 // 	•	Є кнопка “Click me”
 // 	•	Під нею напис:
 // Ви натиснули X разів
@@ -273,28 +275,89 @@
 
 // 💡 Просто useState(0) і +1
 
-// ⸻
+// import { useState } from "react";
 
-// 3️⃣ Зміна тексту кнопки
+// export default function Show() {
+//   const [state, setState] = useState(0);
+
+//   return (
+//     <div>
+//       <button onClick={() => setState(state + 1)}>Click me</button>
+//       <p>Ви натиснули {state} разів</p>
+//     </div>
+//   );
+// }
+
+//! 3️⃣ Зміна тексту кнопки
 // 	•	Початковий текст кнопки: “Login”
 // 	•	При кліку змінюється на “Logout”
 // 	•	При повторному кліку — назад
 
 // 💡 Тут краще використовувати boolean (true/false)
 
-// ⸻
+// import { useState } from "react";
 
-// 4️⃣ Показати повідомлення, якщо число > 10
+// export default function Show() {
+//   const [state, setstate] = useState(true);
+
+//   return (
+//     <div>
+//       // візьми значення і зроби навпаки
+//       <button onClick={() => setstate(!state)}>
+//         {" "}
+//         {state ? "Login" : "Logout"} // умова ? що показати, якщо умова true :
+//         що показати, якщо умова false
+//       </button>
+//     </div>
+//   );
+// }
+
+//! 4️⃣ Показати повідомлення, якщо число > 10
 // 	•	Є лічильник +
 // 	•	Якщо число більше 10 → показати текст:
 // "Багато!"
 
 // 💡 {number > 10 && <p>Багато!</p>}
 
+// import { useState } from "react";
+
+// export default function Show() {
+//   const [state, setstate] = useState(0);
+
+//   return (
+//     <div>
+//       <p>{state > 10 ? "Багато" : state}</p>
+//       <button onClick={() => setstate(state + 1)}>+</button>
+//     </div>
+//   );
+// }
+
 // ⸻
 
-// 5️⃣ Дизейбл кнопки
+//! 5️⃣ Дизейбл кнопки
 // 	•	Є лічильник +
 // 	•	Якщо число дорівнює 5 → кнопка стає disabled
 
 // 💡 <button disabled={number === 5}>
+
+// import css from "./practice-reactivity.module.css";
+
+// import { useState } from "react";
+// import { IoMdRadioButtonOn } from "react-icons/io";
+
+// export default function Show() {
+//   const [state, setstate] = useState(0);
+
+//   return (
+//     <div>
+//       <button
+//         className={css.mybutton}
+//         onClick={() => setstate(state + 1)}
+//         disabled={state === 5}
+//       >
+//         <IoMdRadioButtonOn />
+//       </button>
+//       <p>{state}</p>
+//     </div>
+//   );
+// }

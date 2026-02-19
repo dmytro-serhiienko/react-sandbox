@@ -24,3 +24,14 @@
     background-color: #2e5e5f;
   }
 } */
+
+.mybutton {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
