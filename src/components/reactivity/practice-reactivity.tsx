@@ -361,3 +361,190 @@
 //     </div>
 //   );
 // }
+
+//! 1️⃣ Кнопка “Like”
+// 	•	Є ❤️ (або текст Like)
+// 	•	Початково 0 лайків
+// 	•	При кліку +1
+// 	•	Якщо лайків > 0 — показати текст:
+// "Дякую за підтримку!"
+
+// 💡 Тренуємо число + умовний рендер
+
+// import { FcLike } from "react-icons/fc";
+// import css from "./practice-reactivity.module.css";
+
+// import { useState } from "react";
+
+// export default function Show() {
+//   const [state, setstate] = useState(0);
+
+//   return (
+//     <div>
+//       <button className={css.mybutton} onClick={() => setstate(state + 1)}>
+//         <FcLike />
+//       </button>
+
+//       <p>{state}</p>
+//       <p>{state > 0 ? "Дякую за підтримку!" : ""}</p>
+//     </div>
+//   );
+// }
+
+// ⸻
+
+//! 2️⃣ Показ пароля
+// 	•	Є <input type="password">
+// 	•	Є кнопка “Показати”
+// 	•	При кліку тип input змінюється на "text"
+// 	•	При повторному кліку назад на "password"
+
+// 💡 Тренуємо boolean + зміну атрибуту
+
+// import { useState } from "react";
+// import css from "./practice-reactivity.module.css";
+
+// export default function Show() {
+//   const [state, setState] = useState(true);
+
+//   function changes() {
+//     setState(!state);
+//   }
+
+//   return (
+//     <div className={css.mywrap}>
+//       <input className={css.inp} type={state ? "text" : "password"} />
+//       <button className={css.btn} onClick={changes}>
+//         {state ? "Hide" : "Show"}
+//       </button>
+//     </div>
+//   );
+// }
+
+//! 3️⃣ Лічильник символів
+// 	•	Є input
+// 	•	Під ним напис:
+// Символів: X
+// 	•	Рахує кількість введених символів
+
+// 💡 .length від рядка
+
+// import { useState } from "react";
+
+// export default function Show() {
+//   const [state, setState] = useState("");
+
+//   return (
+//     <div>
+//       <input type="text" onChange={(event) => setState(event.target.value)} />
+//       <p>Символів: {state.length}</p>
+//     </div>
+//   );
+// }
+
+//! 4️⃣ Блок кнопки при пустому input
+// 	•	Є input
+// 	•	Є кнопка “Відправити”
+// 	•	Якщо input порожній → кнопка disabled
+// 	•	Якщо щось введено → активна
+
+// 💡 disabled={value === ""}
+
+// import { useState } from "react";
+// import css from "./practice-reactivity.module.css";
+
+// export default function Show() {
+//   const [state, setState] = useState("");
+
+//   function inputFun(event) {
+//     setState(event.target.value);
+//   }
+
+//   function handleSend() {
+//     setState("");
+//   }
+
+//   return (
+//     <div className={css.mywrap}>
+//       <input
+//         className={css.inp}
+//         type="text"
+//         onChange={inputFun}
+//         value={state}
+//       />
+//       <button className={css.btn} disabled={state === ""} onClick={handleSend}>
+//         Send
+//       </button>
+//     </div>
+//   );
+// }
+
+// 5️⃣ Перемикач теми (light/dark)
+// 	•	Початковий фон білий
+// 	•	Кнопка “Змінити тему”
+// 	•	При кліку фон стає чорним
+// 	•	Текст міняє колір автоматично
+
+// 💡 Boolean + inline style
+
+//! Від себе
+
+// // useState
+// import { useState } from "react";
+
+// // css
+// import css from "./practice-reactivity.module.css";
+
+// // icons
+// import { FaPlus } from "react-icons/fa";
+// import { FaMinus } from "react-icons/fa";
+// import { RiResetRightLine } from "react-icons/ri";
+
+// // general
+// export default function Show() {
+//   const [state, setState] = useState(0);
+
+//   // fun inc
+//   function increment() {
+//     setState(state + 1);
+//   }
+
+//   // fun dec
+//   function decrement() {
+//     {
+//       setState(state > 0 ? state - 1 : state);
+//     }
+//   }
+
+//   // fun res
+//   function reset() {
+//     setState(0);
+//   }
+
+//   return (
+//     <div className="css.mywrap">
+//       <p className={css.title}>Clicks: {state}</p>
+
+//       <ul className={css.list}>
+//         <li className={css.item_list}>
+//           <button onClick={increment} className={css.btn_inc}>
+//             <FaPlus />
+//           </button>
+//         </li>
+//         <li className={css.item_list}>
+//           <button onClick={decrement} className={css.btn_desc}>
+//             {" "}
+//             <FaMinus />
+//           </button>
+//         </li>
+//         <li className={css.item_list}>
+//           {" "}
+//           <button onClick={reset} className={css.btn_res}>
+//             {" "}
+//             <RiResetRightLine />
+//           </button>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// }
