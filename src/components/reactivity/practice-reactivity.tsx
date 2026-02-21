@@ -548,3 +548,21 @@
 //     </div>
 //   );
 // }
+
+// !
+
+// import { useState } from "react";
+
+// export default function Show() {
+//   const [state, setState] = useState(0);
+
+//   function counerFun() {
+//     setState(state + 1);
+//   }
+
+//   return (
+//     <div>
+//       <button onClick={counerFun}>Counter: {state}</button>
+//     </div>
+//   );
+// }
