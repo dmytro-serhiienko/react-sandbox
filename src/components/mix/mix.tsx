@@ -128,9 +128,9 @@ export default function ProductItem({
 }: ProductProps) {
   return (
     <div className={css.product_card}>
-      <p>Title: {title}</p>
+      <p>Назва товару: {title}</p>
       <p className={css.price}>
-        Price: {price} {currency}
+        Ціна: {price} {currency}
       </p>
 
       {discountPercent && discountPercent > 0 && (
@@ -140,8 +140,8 @@ export default function ProductItem({
         </p>
       )}
 
-      <p className={isNew ? css.new_badge : css.used_badge}>Condition:</p>
-      <p className={css.category}>Category: {category}</p>
+      <p className={isNew ? css.new_badge : css.used_badge}>Стан:</p>
+      <p className={css.category}>Категорія: {category}</p>
     </div>
   );
 }
