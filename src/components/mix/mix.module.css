@@ -1,0 +1,52 @@
+/* .online {
+  color: lightgreen;
+}
+
+.offline {
+  opacity: 0.5;
+  color: tomato;
+} */
+
+.product_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px 0;
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  margin-bottom: 10px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.new_badge::after {
+  content: "NEW";
+  background-color: lightgreen;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.used_badge::after {
+  content: "USED";
+  background-color: tomato;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.category {
+  font-size: 15px;
+  color: grey;
+}
