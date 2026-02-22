@@ -3,7 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
+  width: 100%;
+
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
 }
 
 @keyframes rotate {
@@ -17,13 +22,13 @@
 
 .icon {
   font-size: 250px;
-  color: #b79785;
+  color: #ffffff;
 
   animation: rotate 2s linear infinite;
   transition: all 0.7s ease-in-out;
 
   &:hover {
-    color: #ccdad5;
+    color: #5f8679;
   }
 }
 
@@ -39,12 +44,12 @@ li {
 
 .item {
   font-size: 30px;
-  color: #cda185;
+  color: #ffffff;
 
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: #ccdad5;
+    color: #5f8679;
   }
 }
 
@@ -52,13 +57,12 @@ li {
   font-size: 50px;
   display: flex;
   justify-content: center;
-  margin-top: 60px;
-  color: #cda185;
+  color: #ffffff;
 
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: #ccdad5;
+    color: #5f8679;
   }
 }
 
@@ -76,9 +80,11 @@ li {
   transform: translateX(-50%);
 
   font-size: 40px;
-  color: #cda185;
+  color: #ffffff;
+
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: #ccdad5;
+    color: #5f8679;
   }
 }

@@ -56,18 +56,13 @@ body {
 }
 
 .start {
-  background: -webkit-linear-gradient(
-    90deg,
-    #ceddd6,
-    #b9babf,
-    #f1bfa4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    90deg,
-    #ceddd6,
-    #b9babf,
-    #f1bfa4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(./images/back.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mywrp {
