@@ -10,6 +10,7 @@ import Start from "./components/startpage/startpage";
 import StatusLabel from "./components/traning/traning";
 import { GreetingTime } from "./components/traning/traning";
 import { MoodTracker } from "./components/traning/traning";
+import { ToggleButton } from "./components/traning/traning";
 
 function App() {
   return (
@@ -53,6 +54,10 @@ function App() {
 
       <div className={css.trackerwrap}>
         <MoodTracker />
+      </div>
+
+      <div className={css.mywrp}>
+        <ToggleButton />
       </div>
 
       {/*<UserCard

@@ -139,3 +139,30 @@ export function MoodTracker() {
     </div>
   );
 }
+
+//! Задача: Компонент «ToggleButton»
+import { PiCursorClickBold } from "react-icons/pi";
+import { MdOutlineWbSunny } from "react-icons/md";
+import { IoMoonOutline } from "react-icons/io5";
+
+export function ToggleButton() {
+  const [state, setState] = useState(true);
+
+  return (
+    <div className={css.twobox}>
+      <div>
+        <button className={css.togbtn} onClick={() => setState(!state)}>
+          <PiCursorClickBold />
+        </button>
+      </div>
+
+      <div className={css.moon}>
+        {state ? (
+          <MdOutlineWbSunny style={{ color: "#ffb700" }} />
+        ) : (
+          <IoMoonOutline style={{ color: "blue" }} />
+        )}
+      </div>
+    </div>
+  );
+}
