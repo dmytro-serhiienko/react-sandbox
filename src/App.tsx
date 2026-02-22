@@ -11,7 +11,6 @@ import StatusLabel from "./components/traning/traning";
 import { GreetingTime } from "./components/traning/traning";
 import { MoodTracker } from "./components/traning/traning";
 import { ToggleButton } from "./components/traning/traning";
-import { Greeting } from "./components/traning/traning";
 import { Counter } from "./components/traning/traning";
 
 function App() {
