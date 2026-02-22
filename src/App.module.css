@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .wrap_prod {
   display: flex;
   justify-content: center;
@@ -6,4 +12,60 @@
   min-height: 100vh;
 
   gap: 20px;
+}
+
+.mycontainer {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.greetcontainer {
+  background-color: antiquewhite;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trackerwrap {
+  background: -webkit-linear-gradient(
+    90deg,
+    #0f5739,
+    #3d8e66,
+    #45c9a4,
+    #46b5a9,
+    #52c9eb
+  );
+  background: linear-gradient(
+    90deg,
+    #0f5739,
+    #3d8e66,
+    #45c9a4,
+    #46b5a9,
+    #52c9eb
+  );
+
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start {
+  background: -webkit-linear-gradient(
+    90deg,
+    #ceddd6,
+    #b9babf,
+    #f1bfa4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    #ceddd6,
+    #b9babf,
+    #f1bfa4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

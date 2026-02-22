@@ -6,9 +6,18 @@ import css from "./App.module.css";
 // import UserCard from "./components/mix/mix";
 import ProductItem from "./components/mix/mix";
 
+import Start from "./components/startpage/startpage";
+import StatusLabel from "./components/traning/traning";
+import { GreetingTime } from "./components/traning/traning";
+import { MoodTracker } from "./components/traning/traning";
+
 function App() {
   return (
     <div>
+      <div className={css.start}>
+        <Start name="Dmytro" />
+      </div>
+
       <div className={css.wrap_prod}>
         <ProductItem
           title="Iphone 19"
@@ -32,6 +41,20 @@ function App() {
           category="electronics"
         />
       </div>
+
+      <div className={css.mycontainer}>
+        <StatusLabel isActive={true} />
+        <StatusLabel isActive={false} />
+      </div>
+
+      <div className={css.greetcontainer}>
+        <GreetingTime name="Dima" hour={3} isLoggedIn={true} />
+      </div>
+
+      <div className={css.trackerwrap}>
+        <MoodTracker />
+      </div>
+
       {/*<UserCard
         name="Bob"
         age={23}

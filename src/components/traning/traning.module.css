@@ -1,0 +1,55 @@
+.statusT {
+  color: green;
+}
+
+.statusF {
+  color: grey;
+}
+
+.goodstate {
+  color: green;
+}
+
+.badstate {
+  color: tomato;
+}
+
+.textwrap {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  margin: 40px 0px;
+}
+
+.btnplus,
+.btnminus,
+.btnreset {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: rgba(184, 184, 184, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #84fa9b;
+    transform: scale(1.4);
+  }
+}
