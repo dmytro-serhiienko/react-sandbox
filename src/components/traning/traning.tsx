@@ -166,3 +166,57 @@ export function ToggleButton() {
     </div>
   );
 }
+
+//! Завдання: Лічильник з привітанням
+// Створи два компоненти:
+
+// Counter — головний компонент, який має:
+// useState для числа (починається з 0)
+// дві кнопки: "+1" і "Скинути"
+// передає поточне число через props в компонент Greeting
+
+// Greeting — приймає пропс count і показує один з трьох текстів:
+// якщо count === 0 → "Привіт! Натискай кнопки :)"
+// якщо count > 0 і count ≤ 5 → "Вау, вже {count} кліків!"
+// якщо count > 5 → "Ти просто монстр кліків! 🔥 {count}"
+
+// Привіт! Натискай кнопки :)
+// [ +1 ]  [ Скинути ]
+
+// (після 3 кліків)
+// Вау, вже 3 кліків!
+// [ +1 ]  [ Скинути ]
+
+import { FaPlus } from "react-icons/fa6";
+import { GrPowerReset } from "react-icons/gr";
+
+// useState allredy called
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <button onClick={() => setCount(count + 1)}>
+        <FaPlus />
+      </button>
+      <button onClick={() => setCount(0)}>
+        <GrPowerReset />
+      </button>
+
+      <Greeting count={count} />
+    </div>
+  );
+}
+
+export function Greeting({ count }: { count: number }) {
+  return (
+    <div>
+      {count === 0
+        ? "Привіт! Натискай кнопки :)"
+        : count <= 5
+          ? `Вау, вже ${count} кліків!`
+          : `Ти просто монстр кліків! 🔥 ${count}`}
+    </div>
+  );
+}

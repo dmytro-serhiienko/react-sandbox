@@ -11,6 +11,8 @@ import StatusLabel from "./components/traning/traning";
 import { GreetingTime } from "./components/traning/traning";
 import { MoodTracker } from "./components/traning/traning";
 import { ToggleButton } from "./components/traning/traning";
+import { Greeting } from "./components/traning/traning";
+import { Counter } from "./components/traning/traning";
 
 function App() {
   return (
@@ -41,6 +43,10 @@ function App() {
           isNew={true}
           category="electronics"
         />
+      </div>
+
+      <div>
+        <Counter />
       </div>
 
       <div className={css.mycontainer}>
