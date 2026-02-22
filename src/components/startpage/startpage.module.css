@@ -6,15 +6,23 @@
   height: 100vh;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .icon {
   font-size: 250px;
   color: #b79785;
 
-  transition: all 1s ease-in-out;
+  animation: rotate 2s linear infinite;
+  transition: all 0.7s ease-in-out;
 
   &:hover {
-    transform: scale(1.5) rotate(360deg);
-
     color: #ccdad5;
   }
 }
