@@ -255,12 +255,13 @@ export function Checker() {
       <input type="text" id="ageinput" placeholder="Put your age" />
       <button
         onClick={() => {
-          const input = document.getElementById("ageinput");
+          const input = document.getElementById("ageinput") as HTMLInputElement;
           const resultEl = document.getElementById("result");
 
           if (!input || !resultEl) return; // захист від null
 
           const value = input.value.trim();
+
           const age = Number(value);
 
           if (isNaN(age) || value === "") {
