@@ -196,11 +196,11 @@ export function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>
+    <div className={css.wrapcou}>
+      <button className={css.btnplus} onClick={() => setCount(count + 1)}>
         <FaPlus />
       </button>
-      <button onClick={() => setCount(0)}>
+      <button className={css.btnreset} onClick={() => setCount(0)}>
         <GrPowerReset />
       </button>
 

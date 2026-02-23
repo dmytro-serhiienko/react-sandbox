@@ -73,3 +73,13 @@ body {
   height: 300px;
   background-color: #8d9279;
 }
+
+.wrapcou {
+  height: 200px;
+  background: -webkit-linear-gradient(90deg, #0772ba, #a4c755);
+  background: linear-gradient(90deg, #0772ba, #a4c755);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

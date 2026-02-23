@@ -44,7 +44,7 @@ function App() {
         />
       </div>
 
-      <div>
+      <div className={css.wrapcou}>
         <Counter />
       </div>
 
