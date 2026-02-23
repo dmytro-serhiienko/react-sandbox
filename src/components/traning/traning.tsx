@@ -220,3 +220,60 @@ export function Greeting({ count }: { count: number }) {
     </div>
   );
 }
+
+// !Тобі потрібно зробити один компонент, який називається Вітання.
+// Цей компонент повинен вміти показувати різні привітання залежно від того, кому ти його «даруєш».
+
+interface HelloProrps {
+  name: "Мамо" | "Тато";
+  mood: "😊" | "😎" | "🥱";
+}
+
+export function Hello({ name, mood }: HelloProrps) {
+  return (
+    <div>
+      <p>
+        Привіт, {name}! {mood}
+      </p>
+    </div>
+  );
+}
+
+//! Міні-задача
+// Напиши тернарний вираз, який показує:
+
+// якщо age >= 18 → "Повнолітній"
+// інакше → "Неповнолітній"
+
+// (можна просто словами або коротким кодом)
+
+// useState allredy called
+export function Checker() {
+  return (
+    <div>
+      <p id="result">Сіко тобі: </p>
+      <input type="text" id="ageinput" placeholder="Put your age" />
+      <button
+        onClick={() => {
+          const input = document.getElementById("ageinput");
+          const resultEl = document.getElementById("result");
+
+          if (!input || !resultEl) return; // захист від null
+
+          const value = input.value.trim();
+          const age = Number(value);
+
+          if (isNaN(age) || value === "") {
+            resultEl.textContent = "Введи нормальне число";
+            return;
+          }
+
+          const message = age >= 18 ? "Повнолітній" : "Неповнолітній";
+          resultEl.textContent = message;
+        }}
+      >
+        Check
+      </button>
+    </div>
+  );
+}

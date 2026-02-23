@@ -12,12 +12,18 @@ import { GreetingTime } from "./components/traning/traning";
 import { MoodTracker } from "./components/traning/traning";
 import { ToggleButton } from "./components/traning/traning";
 import { Counter } from "./components/traning/traning";
+import { Hello } from "./components/traning/traning";
+import { Checker } from "./components/traning/traning";
 
 function App() {
   return (
     <div>
       <div className={css.start}>
         <Start name="Dmytro" />
+      </div>
+
+      <div>
+        <Checker />
       </div>
 
       <div className={css.wrap_prod}>
@@ -42,6 +48,11 @@ function App() {
           isNew={true}
           category="electronics"
         />
+      </div>
+
+      <div>
+        <Hello name="Мамо" mood="😊" />
+        <Hello name="Тато" mood="😎" />
       </div>
 
       <div className={css.wrapcou}>
