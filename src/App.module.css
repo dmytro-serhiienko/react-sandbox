@@ -83,3 +83,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.wrapppp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  background-color: #5f796c;
+}

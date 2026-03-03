@@ -14,6 +14,24 @@ import { ToggleButton } from "./components/traning/traning";
 import { Counter } from "./components/traning/traning";
 import { Hello } from "./components/traning/traning";
 import { Checker } from "./components/traning/traning";
+import { Calcul } from "./components/traning/traning";
+import { Toggle } from "./components/traning/traning";
+import { LikeCounter } from "./components/traning/traning";
+import { TipsCalc } from "./components/traning/traning";
+import { Form } from "./components/traning/traning";
+import { FirstForm } from "./components/traning/traning";
+import { OrderForm } from "./components/traning/traning";
+import { OrderFormm } from "./components/traning/traning";
+import { MyZapros } from "./components/traning/traning";
+import { Local } from "./components/traning/traning";
+import { UserCard } from "./components/traning/traning";
+import { Product } from "./components/traning/traning";
+import { LanguageSwitcher } from "./components/traning/traning";
+import { MyFirstForm } from "./components/forms/forms";
+import { ReviewForm } from "./components/forms/forms";
+import { RegisterOnEvent } from "./components/forms/forms";
+import { SearchUser } from "./components/search/search";
+import { SimpleForm } from "./components/forms/forms";
 
 function App() {
   return (
@@ -21,11 +39,9 @@ function App() {
       <div className={css.start}>
         <Start name="Dmytro" />
       </div>
-
       <div>
         <Checker />
       </div>
-
       <div className={css.wrap_prod}>
         <ProductItem
           title="Iphone 19"
@@ -49,31 +65,86 @@ function App() {
           category="electronics"
         />
       </div>
-
       <div>
         <Hello name="Мамо" mood="😊" />
         <Hello name="Тато" mood="😎" />
       </div>
-
       <div className={css.wrapcou}>
         <Counter />
       </div>
-
       <div className={css.mycontainer}>
         <StatusLabel isActive={true} />
         <StatusLabel isActive={false} />
       </div>
-
       <div className={css.greetcontainer}>
         <GreetingTime name="Dima" hour={3} isLoggedIn={true} />
       </div>
-
       <div className={css.trackerwrap}>
         <MoodTracker />
       </div>
-
       <div className={css.mywrp}>
         <ToggleButton />
+      </div>
+      <div className={css.wrapcou}>
+        <Calcul />
+      </div>
+      <div className={css.mywrp}>
+        <Toggle />
+      </div>
+      <div className={css.wrapcou}>
+        <LikeCounter />
+      </div>
+      <div className={css.mywrp}>
+        <TipsCalc />
+      </div>
+      <div>
+        <Form />
+      </div>
+      <div className={css.wrapcou}>
+        <FirstForm />
+      </div>
+      <div className={css.mywrp}>
+        <OrderForm />
+      </div>
+      <div className={css.wrapcou}>
+        <OrderFormm />
+      </div>
+      <div>
+        <MyZapros />
+      </div>
+      <div className={css.wrapcou}>
+        <Local />
+      </div>
+      <div className={css.mywrp}>
+        <UserCard
+          name="Biba"
+          email="biba@mail.com"
+          avatarUrl="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671140.jpg?semt=ais_hybrid&w=740&q=80"
+          isOnline={true}
+        />
+      </div>
+      <div className={css.wrapcou}>
+        <Product />
+      </div>
+      <div className={css.mywrp}>
+        <LanguageSwitcher />
+      </div>
+      <div className={css.wrapcou}>
+        <MyFirstForm />
+        <MyFirstForm />
+      </div>
+      <div className={css.trackerwrap}>
+        <ReviewForm />
+      </div>
+      <div className={css.wrapppp}>
+        <RegisterOnEvent />
+      </div>
+      <div className={css.trackerwrap}>
+        <SearchUser />
+      </div>
+
+      <div className={css.wrapcou}>
+        <SimpleForm />
       </div>
 
       {/*<UserCard
