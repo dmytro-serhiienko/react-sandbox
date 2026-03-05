@@ -1,42 +1,57 @@
-import css from "./App.module.css";
+// import css from "./App.module.css";
 // import Show from "./components/reactivity/practice-reactivity";
 // import Props from "./components/props/props";
 
 // import Mix from "./components/mix/mix";
 // import UserCard from "./components/mix/mix";
-import ProductItem from "./components/mix/mix";
+// import ProductItem from "./components/mix/mix";
 
-import Start from "./components/startpage/startpage";
-import StatusLabel from "./components/traning/traning";
-import { GreetingTime } from "./components/traning/traning";
-import { MoodTracker } from "./components/traning/traning";
-import { ToggleButton } from "./components/traning/traning";
-import { Counter } from "./components/traning/traning";
-import { Hello } from "./components/traning/traning";
-import { Checker } from "./components/traning/traning";
-import { Calcul } from "./components/traning/traning";
-import { Toggle } from "./components/traning/traning";
-import { LikeCounter } from "./components/traning/traning";
-import { TipsCalc } from "./components/traning/traning";
-import { Form } from "./components/traning/traning";
-import { FirstForm } from "./components/traning/traning";
-import { OrderForm } from "./components/traning/traning";
-import { OrderFormm } from "./components/traning/traning";
-import { MyZapros } from "./components/traning/traning";
-import { Local } from "./components/traning/traning";
-import { UserCard } from "./components/traning/traning";
-import { Product } from "./components/traning/traning";
-import { LanguageSwitcher } from "./components/traning/traning";
-import { MyFirstForm } from "./components/forms/forms";
-import { ReviewForm } from "./components/forms/forms";
-import { RegisterOnEvent } from "./components/forms/forms";
-import { SearchUser } from "./components/search/search";
-import { SimpleForm } from "./components/forms/forms";
+// import Start from "./components/startpage/startpage";
+// import StatusLabel from "./components/traning/traning";
+// import { GreetingTime } from "./components/traning/traning";
+// import { MoodTracker } from "./components/traning/traning";
+// import { ToggleButton } from "./components/traning/traning";
+// import { Counter } from "./components/traning/traning";
+// import { Hello } from "./components/traning/traning";
+// import { Checker } from "./components/traning/traning";
+// import { Calcul } from "./components/traning/traning";
+// import { Toggle } from "./components/traning/traning";
+// import { LikeCounter } from "./components/traning/traning";
+// import { TipsCalc } from "./components/traning/traning";
+// import { Form } from "./components/traning/traning";
+// import { FirstForm } from "./components/traning/traning";
+// import { OrderForm } from "./components/traning/traning";
+// import { OrderFormm } from "./components/traning/traning";
+// import { MyZapros } from "./components/traning/traning";
+// import { Local } from "./components/traning/traning";
+// import { UserCard } from "./components/traning/traning";
+// import { Product } from "./components/traning/traning";
+// import { LanguageSwitcher } from "./components/traning/traning";
+// import { MyFirstForm } from "./components/forms/forms";
+// import { ReviewForm } from "./components/forms/forms";
+// import { RegisterOnEvent } from "./components/forms/forms";
+// import { SearchUser } from "./components/search/search";
+// import { SimpleForm } from "./components/forms/forms";
+
+// ! QueryClient
+
+import { RickFn } from "./components/Api/Api";
+import { Forma } from "./components/Formik/Formik";
 
 function App() {
   return (
     <div>
-      <div className={css.start}>
+      <div>
+        <RickFn />
+      </div>
+
+      <div>
+        <Forma />
+      </div>
+
+      <div>{/* <Forma /> */}</div>
+
+      {/* <div className={css.start}>
         <Start name="Dmytro" />
       </div>
       <div>
@@ -145,7 +160,7 @@ function App() {
 
       <div className={css.wrapcou}>
         <SimpleForm />
-      </div>
+      </div> */}
 
       {/*<UserCard
         name="Bob"
