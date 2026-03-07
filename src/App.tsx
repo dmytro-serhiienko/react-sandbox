@@ -40,14 +40,16 @@
 
 // import { Shukai } from "./components/Api/Api";
 // import { Shukai2 } from "./components/Api/Api";
-import { ApiShow } from "./components/Api/Api";
+// import { ApiShow } from "./components/Api/Api";
+import { ShowPost } from "./components/Api/Api";
 
 function App() {
   return (
     <div>
       <div>
         {/* <Shukai2 /> */}
-        <ApiShow />
+        {/* <ApiShow /> */}
+        <ShowPost />
         {/* <Shukai /> */}
       </div>
       {/* <div>
