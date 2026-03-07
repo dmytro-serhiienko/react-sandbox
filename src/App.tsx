@@ -35,22 +35,32 @@
 
 // ! QueryClient
 
-import { RickFn } from "./components/Api/Api";
-import { Forma } from "./components/Formik/Formik";
+// import { JApiFn, RickFn } from "./components/Api/Api";
+// import { Forma } from "./components/Formik/Formik";
+
+// import { Shukai } from "./components/Api/Api";
+// import { Shukai2 } from "./components/Api/Api";
+import { ApiShow } from "./components/Api/Api";
 
 function App() {
   return (
     <div>
       <div>
+        {/* <Shukai2 /> */}
+        <ApiShow />
+        {/* <Shukai /> */}
+      </div>
+      {/* <div>
         <RickFn />
       </div>
-
       <div>
         <Forma />
       </div>
+      <div>
+        <JApiFn />
+      </div> */}
 
       <div>{/* <Forma /> */}</div>
-
       {/* <div className={css.start}>
         <Start name="Dmytro" />
       </div>
@@ -161,7 +171,6 @@ function App() {
       <div className={css.wrapcou}>
         <SimpleForm />
       </div> */}
-
       {/*<UserCard
         name="Bob"
         age={23}

@@ -41,7 +41,7 @@ export function Forma() {
     <Formik initialValues={FormikInitialValues} onSubmit={handleSubmit}>
       <Form>
         <fieldset>
-          <legend>Work Form</legend>
+          <legend>Formik</legend>
           <label htmlFor={`${MyId}-name`}>Name</label>
           <Field type="text" name="username" id={`${MyId}-name`} />
 
