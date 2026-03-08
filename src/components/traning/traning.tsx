@@ -88,7 +88,7 @@ export function GreetingTime({ name, hour, isLoggedIn }: GreetingTimeProps) {
 import { FaRegSmile } from "react-icons/fa";
 import { ImSad } from "react-icons/im";
 import { RiResetRightLine } from "react-icons/ri";
-import { useEffectEvent, useState } from "react";
+import { useState } from "react";
 
 export function MoodTracker() {
   const [goodstate, setGoodState] = useState(0);
@@ -552,11 +552,17 @@ export function OrderFormm() {
 import axios from "axios";
 // import { useState } from "react";
 
+interface ZaprosUser {
+  name: string;
+  username: string;
+  email: string;
+}
+
 export function MyZapros() {
   const [inputId, setInputId] = useState(""); // що ввів користувач
-  const [user, setUser] = useState(null); // дані користувача або null
+  const [user, setUser] = useState<ZaprosUser | null>(null); // дані користувача або null
   const [loading, setLoading] = useState(false); // показуємо "завантаження..."
-  const [error, setError] = useState(null); // помилка, якщо щось пішло не так
+  const [error, setError] = useState<string | null>(null); // помилка, якщо щось пішло не так
 
   const handleSearch = async () => {
     const id = Number(inputId.trim());
@@ -571,8 +577,9 @@ export function MyZapros() {
       );
       setUser(response.data);
     } catch (err) {
-      console.error(err.message);
-      console.error(err);
+      const error = err instanceof Error ? err : new Error(String(err));
+      console.error(error.message);
+      console.error(error);
     } finally {
       setLoading(false);
     }
