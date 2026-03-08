@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { Formik, Form, Field, FormikHelpers } from "formik";
+import { Formik, Form, Field } from "formik";
 import { useState } from "react";
 
 const BASE_URL = "https://rickandmortyapi.com/api/character";
@@ -173,60 +173,60 @@ export function Shukai2() {
 
 // !!!!!!
 
-const BASE_URL_R = "https://randomuser.me/api/";
+// const BASE_URL_R = "https://randomuser.me/api/";
 
-interface ApiShowType {
-  name: { title: string; first: string; last: string };
-  location: { country: string };
-  id: { value: number };
-}
+// interface ApiShowType {
+//   name: { title: string; first: string; last: string };
+//   location: { country: string };
+//   id: { value: number };
+// }
 
-export function ApiShow() {
-  const [userId, setUserId] = useState(0);
+// export function ApiShow() {
+//   const [userId, setUserId] = useState(0);
 
-  const poshuk4 = async () => {
-    const response = await axios.get(BASE_URL_R);
-    return response.data.results;
-  };
+//   const poshuk4 = async () => {
+//     const response = await axios.get(BASE_URL_R);
+//     return response.data.results;
+//   };
 
-  const { data, error, isLoading, isError, refetch } = useQuery({
-    queryKey: ["user"],
-    queryFn: poshuk4,
-    enabled: false,
-  });
+//   const { data, error, isLoading, isError, refetch } = useQuery({
+//     queryKey: ["user"],
+//     queryFn: poshuk4,
+//     enabled: false,
+//   });
 
-  const handleSubmit = () => {
-    refetch();
-    setUserId((userId) => userId + 1);
-  };
+//   const handleSubmit = () => {
+//     refetch();
+//     setUserId((userId) => userId + 1);
+//   };
 
-  return (
-    <div>
-      {isLoading && <p>Loading...</p>}
-      {isError && <p>Error {error.message}</p>}
-      {data &&
-        data.map(
-          ({
-            id: { value },
-            name: { title, first, last },
-            location: { country },
-          }: ApiShowType) => {
-            return (
-              <div key={value}>
-                <p>
-                  User: {title} {first} {last}
-                </p>
-                <p>Country: {country}</p>
-              </div>
-            );
-          },
-        )}
-      <button onClick={handleSubmit} type="button">
-        Show Random
-      </button>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       {isLoading && <p>Loading...</p>}
+//       {isError && <p>Error {error.message}</p>}
+//       {data &&
+//         data.map(
+//           ({
+//             id: { value },
+//             name: { title, first, last },
+//             location: { country },
+//           }: ApiShowType) => {
+//             return (
+//               <div key={value}>
+//                 <p>
+//                   User: {title} {first} {last}
+//                 </p>
+//                 <p>Country: {country}</p>
+//               </div>
+//             );
+//           },
+//         )}
+//       <button onClick={handleSubmit} type="button">
+//         Show Random
+//       </button>
+//     </div>
+//   );
+// }
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!! FORMIK + API
 
