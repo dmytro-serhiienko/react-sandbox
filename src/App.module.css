@@ -92,3 +92,15 @@ body {
 
   background-color: #5f796c;
 }
+
+.autorize {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+
+  min-height: 100vh;
+  padding: 50px 0;
+
+  background: linear-gradient(90deg, #054c76, #0c192a, #471c3a);
+}

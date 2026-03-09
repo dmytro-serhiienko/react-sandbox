@@ -1,4 +1,4 @@
-// import css from "./App.module.css";
+import css from "./App.module.css";
 // import Show from "./components/reactivity/practice-reactivity";
 // import Props from "./components/props/props";
 
@@ -45,11 +45,17 @@
 import { ShowPost } from "./components/Api/Api";
 import { Apishka } from "./components/Ban/Ban";
 import { Form1 } from "./components/Form1/Form1";
+import { AutorizeForm } from "./components/Autoriz/Autoriz";
+import { ShowAva } from "./components/Autoriz/AutorizShow";
 
 function App() {
   return (
     <div>
       <div>
+        <div className={css.autorize}>
+          <AutorizeForm />
+          <ShowAva />
+        </div>
         <Form1 />
         {/* <Shukai2 /> */}
         {/* <ApiShow /> */}
