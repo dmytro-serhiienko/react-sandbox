@@ -43,13 +43,17 @@
 // import { Shukai2 } from "./components/Api/Api";
 // import { ApiShow } from "./components/Api/Api";
 import { ShowPost } from "./components/Api/Api";
+import { Apishka } from "./components/Ban/Ban";
+import { Form1 } from "./components/Form1/Form1";
 
 function App() {
   return (
     <div>
       <div>
+        <Form1 />
         {/* <Shukai2 /> */}
         {/* <ApiShow /> */}
+        <Apishka />
         <ShowPost />
         {/* <Shukai /> */}
       </div>
