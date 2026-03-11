@@ -49,6 +49,7 @@ import { AutorizeForm } from "./components/Autoriz/Autoriz";
 import { ShowAva } from "./components/Autoriz/AutorizShow";
 import { Poshuk1 } from "./components/Poshuk1/poshuk1";
 import { Poshuk2 } from "./components/Poshuk2/Poshuk2";
+import { Formik2 } from "./components/Formik2/Formik2";
 
 function App() {
   return (
@@ -57,6 +58,9 @@ function App() {
         <div className={css.autorize}>
           <AutorizeForm />
           <ShowAva />
+        </div>
+        <div className={css.posh}>
+          <Formik2 />
         </div>
         <div>
           <Poshuk2 />
