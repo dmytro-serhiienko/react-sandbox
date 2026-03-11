@@ -47,6 +47,8 @@ import { Apishka } from "./components/Ban/Ban";
 import { Form1 } from "./components/Form1/Form1";
 import { AutorizeForm } from "./components/Autoriz/Autoriz";
 import { ShowAva } from "./components/Autoriz/AutorizShow";
+import { Poshuk1 } from "./components/Poshuk1/poshuk1";
+import { Poshuk2 } from "./components/Poshuk2/Poshuk2";
 
 function App() {
   return (
@@ -56,6 +58,12 @@ function App() {
           <AutorizeForm />
           <ShowAva />
         </div>
+        <div>
+          <Poshuk2 />
+        </div>
+        <div className={css.posh}>
+          <Poshuk1 />
+        </div>{" "}
         <Form1 />
         {/* <Shukai2 /> */}
         {/* <ApiShow /> */}

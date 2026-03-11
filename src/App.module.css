@@ -104,3 +104,12 @@ body {
 
   background: linear-gradient(90deg, #054c76, #0c192a, #471c3a);
 }
+
+.posh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: linear-gradient(270deg, #4c40a3, #46b5a9, #52c9eb);
+}
