@@ -11,16 +11,22 @@ interface FormikType {
 const INITIAL_VALUES: FormikType = {
   username: "",
   useremail: "",
-  userphone: +38,
+  userphone: 38,
 };
 
 export function Formik2() {
   const customId = useId();
 
   const SCHEMA = Yup.object({
-    username: Yup.string().min(2, "To short").max(10, "To large").required(),
-    useremail: Yup.string().min(4, "To short").max(20, "To large").required(),
-    userphone: Yup.number().min(4, "To short").max(20, "To large"),
+    username: Yup.string()
+      .min(2, "To short")
+      .max(10, "phone To large")
+      .required(),
+    useremail: Yup.string()
+      .min(4, "To short")
+      .max(20, "email To large")
+      .required(),
+    userphone: Yup.number().min(4, "To short"),
   });
 
   const handleSubmit = (
@@ -58,6 +64,7 @@ export function Formik2() {
               id={`${customId}-email`}
               placeholder="Email"
             ></Field>
+            <ErrorMessage name="useremail" />
           </label>
 
           <label htmlFor="">
@@ -67,6 +74,7 @@ export function Formik2() {
               id={`${customId}-tel`}
               placeholder="Phone"
             ></Field>
+            <ErrorMessage name="userphone" />
           </label>
 
           <button type="submit">Send</button>
