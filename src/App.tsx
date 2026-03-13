@@ -50,8 +50,14 @@ import { ShowAva } from "./components/Autoriz/AutorizShow";
 import { Poshuk1 } from "./components/Poshuk1/poshuk1";
 import { Poshuk2 } from "./components/Poshuk2/Poshuk2";
 import { Formik2 } from "./components/Formik2/Formik2";
+import Modal from "./components/Modal/Modal";
+import { useState } from "react";
+import { Formik3 } from "./components/Formik3/Formik3";
+import { Formik4 } from "./components/Formik4/Formik4";
+import { Toaster } from "react-hot-toast";
 
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <div>
@@ -59,9 +65,27 @@ function App() {
           <AutorizeForm />
           <ShowAva />
         </div>
+        <div className={css.f4_wrap}>
+          <Formik4 />
+          <Toaster />
+        </div>
+        <div className={css.posh}>
+          <Formik3 />
+        </div>
         <div className={css.posh}>
           <Formik2 />
         </div>
+        {/* MODAL */}
+        <div>
+          {/* Кнопка просто міняє false на true */}
+          <button onClick={() => setOpen(true)}>Відкрити вікно</button>
+          {/* Підключаємо модалку і передаємо стан */}
+          <Modal isOpen={open} onClose={() => setOpen(false)}>
+            <h2>Успіх!</h2>
+            <p>Я працюю в окремому файлі.</p>
+          </Modal>
+        </div>
+        {/*  */}
         <div>
           <Poshuk2 />
         </div>

@@ -113,3 +113,19 @@ body {
   min-height: 100vh;
   background: linear-gradient(270deg, #4c40a3, #46b5a9, #52c9eb);
 }
+
+.f4_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #0f5739,
+    #3d8e66,
+    #45c9a4,
+    #46b5a9,
+    #52c9eb
+  );
+}

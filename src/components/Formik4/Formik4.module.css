@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field_1,
+.field_2,
+.field_3 {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
