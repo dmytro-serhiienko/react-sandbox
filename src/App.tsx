@@ -55,6 +55,7 @@ import { useState } from "react";
 import { Formik3 } from "./components/Formik3/Formik3";
 import { Formik4 } from "./components/Formik4/Formik4";
 import { Toaster } from "react-hot-toast";
+import { Advice } from "./components/Advise/Advice";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -71,6 +72,9 @@ function App() {
         </div>
         <div className={css.posh}>
           <Formik3 />
+        </div>
+        <div>
+          <Advice />
         </div>
         <div className={css.posh}>
           <Formik2 />
