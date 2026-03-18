@@ -56,6 +56,11 @@ import { Formik3 } from "./components/Formik3/Formik3";
 import { Formik4 } from "./components/Formik4/Formik4";
 import { Toaster } from "react-hot-toast";
 import { Advice } from "./components/Advise/Advice";
+import { Mut } from "./components/Mutation/Mutatiom";
+import { Busco } from "./components/Busco/Busco";
+import { Mostra } from "./components/Mostra/Mostra";
+import Modal2 from "./components/Modal2/Modal2";
+import { Modal3 } from "./components/Modal3/Modal3";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -73,11 +78,26 @@ function App() {
         <div className={css.posh}>
           <Formik3 />
         </div>
+        <div className={css.modal3}>
+          <Modal3 />
+        </div>
+        <div>
+          <Modal2 />
+        </div>
+        <div>
+          <Busco />
+        </div>
         <div>
           <Advice />
         </div>
+        <div className={css.mostra}>
+          <Mostra />
+        </div>
         <div className={css.posh}>
           <Formik2 />
+        </div>
+        <div>
+          <Mut />
         </div>
         {/* MODAL */}
         <div>

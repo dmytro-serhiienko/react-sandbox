@@ -129,3 +129,21 @@ body {
     #52c9eb
   );
 }
+
+.mostra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: linear-gradient(90deg, #0772ba, #a4c755);
+}
+
+.modal3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1d1d1;
+
+  min-height: 100vh;
+}
