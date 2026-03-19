@@ -61,11 +61,16 @@ import { Busco } from "./components/Busco/Busco";
 import { Mostra } from "./components/Mostra/Mostra";
 import Modal2 from "./components/Modal2/Modal2";
 import { Modal3 } from "./components/Modal3/Modal3";
+import { Weather } from "./components/Weather/Weather";
 
 function App() {
   const [open, setOpen] = useState(false);
   return (
     <div>
+      <div className={css.weather1}>
+        <Weather />
+      </div>
+
       <div>
         <div className={css.autorize}>
           <AutorizeForm />
