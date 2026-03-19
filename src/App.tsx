@@ -62,6 +62,7 @@ import { Mostra } from "./components/Mostra/Mostra";
 import Modal2 from "./components/Modal2/Modal2";
 import { Modal3 } from "./components/Modal3/Modal3";
 import { Weather } from "./components/Weather/Weather";
+import { InputForm } from "./components/Einput/Einput";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -79,6 +80,9 @@ function App() {
         <div className={css.f4_wrap}>
           <Formik4 />
           <Toaster />
+        </div>
+        <div>
+          <InputForm />
         </div>
         <div className={css.posh}>
           <Formik3 />
