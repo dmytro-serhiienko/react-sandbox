@@ -63,6 +63,8 @@ import Modal2 from "./components/Modal2/Modal2";
 import { Modal3 } from "./components/Modal3/Modal3";
 import { Weather } from "./components/Weather/Weather";
 import { InputForm } from "./components/Einput/Einput";
+import { Modal4 } from "./components/Modal4/Modal4";
+import { Input } from "./components/Input/Input";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -70,6 +72,14 @@ function App() {
     <div>
       <div className={css.weather1}>
         <Weather />
+      </div>
+
+      <div className={css.modal4}>
+        <Modal4 />
+      </div>
+
+      <div className={css.autorize}>
+        <Input />
       </div>
 
       <div>

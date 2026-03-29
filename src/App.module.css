@@ -159,3 +159,19 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.modal4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #0f5739,
+    #3d8e66,
+    #45c9a4,
+    #46b5a9,
+    #52c9eb
+  );
+}
