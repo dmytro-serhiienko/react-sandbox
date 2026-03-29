@@ -1,8 +1,6 @@
 import { Formik, Form, Field } from "formik";
 import { useId } from "react";
 
-import { ClimbingBoxLoader } from "react-spinners";
-
 interface FormikType {
   userid: number;
 }
