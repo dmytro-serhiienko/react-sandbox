@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export function Input() {
   const [inputValue, setInputValue] = useState("");
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<string[]>([]);
 
   const handleAdd = () => {
     setItems([...items, inputValue]);
