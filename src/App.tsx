@@ -69,6 +69,8 @@ import { Stan } from "./components/Stan/Stan";
 import { Counterr } from "./components/Hook/Hook";
 import { Hook2 } from "./components/Hook2/Hook2";
 import { Modal5 } from "./components/Modal5/Modal5";
+import { Zus1 } from "./components/zus1/Zus1";
+import { Zus2 } from "./components/zus2/Zus2";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -88,6 +90,14 @@ function App() {
 
       <div className={css.autorize}>
         <Input />
+      </div>
+
+      <div className={css.autorize}>
+        <Zus1 />
+      </div>
+
+      <div className={css.modal4}>
+        <Zus2 />
       </div>
 
       <div className={css.modal4}>
